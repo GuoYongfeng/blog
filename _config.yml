@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 郭永峰个人技术博客
-subtitle:
+title: 郭永峰的技术博客
+subtitle: 专注前端技术研究
 description:
 author: 郭永峰
-language:
+language: zh-CN
 timezone:
 
 # URL
@@ -68,5 +68,6 @@ theme: spfk
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
-  repo: <git@github.com:GuoYongfeng/hexo-blog.git>
+  type: github
+  repo: git@github.com:GuoYongfeng/yongfeng.github.io.git
+  branch: master
