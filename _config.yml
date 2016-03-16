@@ -70,4 +70,4 @@ theme: spfk
 deploy:
   type: git
   repo: git@github.com:GuoYongfeng/blog.git
-  branch: gh-pages
+  branch: master
