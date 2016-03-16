@@ -3,17 +3,33 @@
 <head>
   <meta charset="utf-8">
   
-  <title>郭永峰的技术博客</title>
+  <title>React基础知识详解 | 郭永峰的技术博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="郭永峰的技术博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="编者按：除组件化、虚拟DOM在复用以及性能上带来的一般好处外，React思想使得开发者之间更好的分工与合作，在配合上非常顺畅，规范的接口以及极强的约束，使得整个代码结构清晰，不同开发者的代码高度一致。
+
+课程示例代码请前往：https://github.com/zhufengreact/zhufeng-react-tutorial
+0. 本次课程大纲课程主线如下：
+
+React是什么react">
+<meta property="og:type" content="article">
+<meta property="og:title" content="React基础知识详解">
+<meta property="og:url" content="http://yoursite.com/2016/03/16/hello-world/index.html">
 <meta property="og:site_name" content="郭永峰的技术博客">
-<meta property="og:description">
+<meta property="og:description" content="编者按：除组件化、虚拟DOM在复用以及性能上带来的一般好处外，React思想使得开发者之间更好的分工与合作，在配合上非常顺畅，规范的接口以及极强的约束，使得整个代码结构清晰，不同开发者的代码高度一致。
+
+课程示例代码请前往：https://github.com/zhufengreact/zhufeng-react-tutorial
+0. 本次课程大纲课程主线如下：
+
+React是什么react">
+<meta property="og:updated_time" content="2016-03-16T03:03:50.098Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="郭永峰的技术博客">
-<meta name="twitter:description">
+<meta name="twitter:title" content="React基础知识详解">
+<meta name="twitter:description" content="编者按：除组件化、虚拟DOM在复用以及性能上带来的一般好处外，React思想使得开发者之间更好的分工与合作，在配合上非常顺畅，规范的接口以及极强的约束，使得整个代码结构清晰，不同开发者的代码高度一致。
+
+课程示例代码请前往：https://github.com/zhufengreact/zhufeng-react-tutorial
+0. 本次课程大纲课程主线如下：
+
+React是什么react">
   
     <link rel="alternative" href="/atom.xml" title="郭永峰的技术博客" type="application/atom+xml">
   
@@ -27,9 +43,6 @@
   <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   
-    
-    
-  
   
       <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
   
@@ -40,8 +53,8 @@
       var yiliaConfig = {
           fancybox: true,
           animate: true,
-          isHome: true,
-          isPost: false,
+          isHome: false,
+          isPost: true,
           isArchive: false,
           isTag: false,
           isCategory: false,
@@ -247,9 +260,7 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap">
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a href="/2016/03/16/hello-world/" class="article-date">
@@ -265,12 +276,19 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/16/hello-world/">React基础知识详解</a>
+    <h1 class="article-title" itemprop="name">
+      React基础知识详解
     </h1>
   
 
       </header>
+      
+      <div class="article-info article-info-post">
+        
+
+        
+        <div class="clearfix"></div>
+      </div>
       
     
     <div class="article-entry" itemprop="articleBody">
@@ -378,136 +396,163 @@
       
     </div>
     
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
   </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2016/03/16/hello-world/">React基础知识详解</a></p>
+        <p><span>文章作者:</span><a href="/" title="访问 郭永峰 的个人博客">郭永峰</a></p>
+        <p><span>发布时间:</span>2016年03月16日 - 11时03分</p>
+        <p><span>最后更新:</span>2016年03月16日 - 11时03分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2016/03/16/hello-world/" title="React基础知识详解">http://yoursite.com/2016/03/16/hello-world/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/03/16/hello-world/　　作者: 郭永峰" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script src="/js/clipboard.min.js"></script>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+<nav id="article-nav">
+  
+  
+    <a href="/2016/03/16/index/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">index</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
   
 </article>
 
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#0-本次课程大纲"><span class="toc-number">1.</span> <span class="toc-text">0. 本次课程大纲</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-React相关文件顶层api的介绍"><span class="toc-number">2.</span> <span class="toc-text">1. React相关文件顶层api的介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#react-js"><span class="toc-number">2.1.</span> <span class="toc-text">react.js</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#react-dom-js"><span class="toc-number">2.2.</span> <span class="toc-text">react-dom.js</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#react-dom-server-js"><span class="toc-number">2.3.</span> <span class="toc-text">react-dom-server.js</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-jsx语法"><span class="toc-number">3.</span> <span class="toc-text">2. jsx语法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-注释、命名、根元素个数、JSX-嵌入变量"><span class="toc-number">3.1.</span> <span class="toc-text">2.1 注释、命名、根元素个数、JSX 嵌入变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-styles"><span class="toc-number">3.2.</span> <span class="toc-text">2.2 styles</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-JSX-SPREAD"><span class="toc-number">3.3.</span> <span class="toc-text">2.3  JSX SPREAD</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-4-属性名不能和-js-关键字冲突"><span class="toc-number">3.4.</span> <span class="toc-text">2.4 属性名不能和 js 关键字冲突</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-数据流：state-props-propType"><span class="toc-number">4.</span> <span class="toc-text">3. 数据流：state props propType</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-state-amp-amp-setState"><span class="toc-number">4.1.</span> <span class="toc-text">3.1 state && setState</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-props"><span class="toc-number">4.2.</span> <span class="toc-text">3.2 props</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-propTypes"><span class="toc-number">4.3.</span> <span class="toc-text">3.3 propTypes</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-调用API定义组件"><span class="toc-number">5.</span> <span class="toc-text">4. 调用API定义组件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-组件初始定义"><span class="toc-number">5.1.</span> <span class="toc-text">4.1 组件初始定义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-初次创建组件时调用"><span class="toc-number">5.2.</span> <span class="toc-text">4.2 初次创建组件时调用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-3-组件的属性值改变时调用"><span class="toc-number">5.3.</span> <span class="toc-text">4.3 组件的属性值改变时调用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-4-销毁组件"><span class="toc-number">5.4.</span> <span class="toc-text">4.4 销毁组件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-5-示例诠释组件全生命周期"><span class="toc-number">5.5.</span> <span class="toc-text">4.5 示例诠释组件全生命周期</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-6-回顾组件的渲染过程"><span class="toc-number">5.6.</span> <span class="toc-text">4.6 回顾组件的渲染过程</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-使用ref对操作DOM"><span class="toc-number">6.</span> <span class="toc-text">5. 使用ref对操作DOM</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-事件event"><span class="toc-number">7.</span> <span class="toc-text">6. 事件event</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-组件的组合"><span class="toc-number">8.</span> <span class="toc-text">7. 组件的组合</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#7-1-受限组件-amp-amp-非受限组件"><span class="toc-number">8.1.</span> <span class="toc-text">7.1 受限组件 && 非受限组件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-2-使用自定义的组件"><span class="toc-number">8.2.</span> <span class="toc-text">7.2 使用自定义的组件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-3-组合-CHILDREN"><span class="toc-number">8.3.</span> <span class="toc-text">7.3 组合 CHILDREN</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-form表单操作"><span class="toc-number">9.</span> <span class="toc-text">8. form表单操作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#8-1-React表单组件和-html-的不同点"><span class="toc-number">9.1.</span> <span class="toc-text">8.1 React表单组件和 html 的不同点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-2-综合表达组件示例"><span class="toc-number">9.2.</span> <span class="toc-text">8.2 综合表达组件示例</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-mixin共享"><span class="toc-number">10.</span> <span class="toc-text">9. mixin共享</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#基础部分完结寄语"><span class="toc-number">11.</span> <span class="toc-text">基础部分完结寄语</span></a></li></ol>
+</div>
+<style>
+    .left-col .switch-btn {
+        display: none;
+    }
+    .left-col .switch-area {
+        display: none;
+    }
+</style>
+
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+            $(".switch-btn, .switch-area").fadeOut(300);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+            $(".switch-btn, .switch-area").fadeIn(500);
+        }
+    })
+
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+        $(".switch-btn, .switch-area").show();
+    }
+</script>
 
 
 
 
 
+<div class="bdsharebuttonbox">
+	<a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+	<a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+	<a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+	<a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+	<a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+	<a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+	<a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+</div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
 
 
 
-  
-    <article id="post-index" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/03/16/index/" class="article-date">
-      <time datetime="2016-03-16T01:40:36.000Z" itemprop="datePublished">2016-03-16</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
+
     
-      <input type="hidden" class="isFancy" />
+      <div class="duoshuo" id="comments">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="2016/03/16/hello-world/" data-title="React基础知识详解" data-url="http://yoursite.com/2016/03/16/hello-world/"></div>
+    <!-- 多说评论框 end -->
+    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:"luums"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+    <!-- 多说公共JS代码 end -->
+</div>
+
     
-    
-      <header class="article-header">
+
+
+
+    <div class="scroll" id="post-nav-button">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/16/index/">index</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-webpack" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/03/16/webpack/" class="article-date">
-      <time datetime="2016-03-16T01:21:53.000Z" itemprop="datePublished">2016-03-16</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/16/webpack/">webpack</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <p>gfhksdfgs</p>
-
-      
+            <a href="/2016/03/16/index/" title="下一篇: index">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
     </div>
-    
-    <div class="article-info article-info-index">
-      
-      
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/03/16/hello-world/">React基础知识详解</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/03/16/index/">index</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/03/16/webpack/">webpack</a></li></ul>
+    <script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#toc, .switch-btn, .switch-area").toggle();
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+                $(".switch-btn, .switch-area").fadeToggle(300);
+            }
+        })
+    </script>
 
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
 
 
-
-
-
-
-
-
-
-  
-  
+    <script>
+        
+    </script>
 </div>
       <footer id="footer">
     <div class="outer">
