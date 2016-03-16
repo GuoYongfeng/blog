@@ -69,5 +69,5 @@ theme: spfk
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:GuoYongfeng/GuoYongfeg.github.io.git
-  branch: master
+  repo: git@github.com:GuoYongfeng/blog.git
+  branch: gh-pages
